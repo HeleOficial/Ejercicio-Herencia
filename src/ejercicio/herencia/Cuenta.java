@@ -22,12 +22,27 @@ public class Cuenta {
         this.tasaAnual = tasaAnual;
     }
     
+    public void consignar(float cantidad) {
+        this.saldo += cantidad;
+        this.numeroConsignaciones++;
+    }
+    
+    public void retirar(float cantidad) {
+        if (cantidad <= this.saldo) {
+            this.saldo -= cantidad;
+            this.numeroRetiros++;
+        } else {
+            System.out.println("La cantidad a retirar excede el saldo actual"
+                    + ".");
+        }
+    }
+    
     public void imprimir() {
-        System.out.println("Saldo: " + saldo);
-        System.out.println("Número de consignaciones: " + numeroConsignaciones);
-        System.out.println("Número de retiros: " + numeroRetiros);
-        System.out.println("Tasa anual: " + tasaAnual + "%");
-        System.out.println("Comisión mensual: " + comisionMensual);
+        System.out.println("Saldo: " + this.saldo);
+        System.out.println("Número de consignaciones: " + this.numeroConsignaciones);
+        System.out.println("Número de retiros: " + this.numeroRetiros);
+        System.out.println("Tasa anual: " + this.tasaAnual + "%");
+        System.out.println("Comisión mensual: " + this.comisionMensual);
     }
 }
     

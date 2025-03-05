@@ -16,8 +16,20 @@ public class EjercicioHerencia {
      */
     public static void main(String[] args) {
         
-        System.out.println("Hola mundo 2");
+        Cuenta cuenta1 = new Cuenta(10000, 0);
+        cuenta1.imprimir();
         
+        cuenta1.consignar(2501);    
+        System.out.println("");
+        cuenta1.imprimir();
+        
+        cuenta1.retirar(1501);
+        System.out.println("");
+        cuenta1.imprimir();
+        
+        cuenta1.retirar(15000);
+        System.out.println("");
+        cuenta1.imprimir();
     }
     
 }
