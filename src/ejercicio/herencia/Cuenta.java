@@ -22,15 +22,15 @@ public class Cuenta {
         this.tasaAnual = tasaAnual;
     }
     
-        public void imprimir() {
-        System.out.println("Saldo: " + this.saldo);
-        System.out.println("Número de consignaciones: " + this.numeroConsignaciones);
-        System.out.println("Número de retiros: " + this.numeroRetiros);
-        System.out.println("Tasa anual: " + this.tasaAnual + "%");
-        System.out.println("Comisión mensual: " + this.comisionMensual);
+    public void imprimir() {
+        System.out.println("Saldo: " + saldo);
+        System.out.println("Número de consignaciones: " + numeroConsignaciones);
+        System.out.println("Número de retiros: " + numeroRetiros);
+        System.out.println("Tasa anual: " + tasaAnual + "%");
+        System.out.println("Comisión mensual: " + comisionMensual);
     }
 }
     
     
     
-}
+
